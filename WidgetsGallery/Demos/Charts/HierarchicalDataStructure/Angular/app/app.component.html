@@ -1,0 +1,11 @@
+<dx-tree-map
+    [dataSource]="citiesPopulations"
+    title="The Most Populated Cities by Continents"
+    resolveLabelOverflow="ellipsis">
+    <dxo-tooltip
+        [enabled]="true"
+        format="thousands"
+        [customizeTooltip]="customizeTooltip"></dxo-tooltip>
+    <dxo-size
+        [height]="500"></dxo-size>
+</dx-tree-map>

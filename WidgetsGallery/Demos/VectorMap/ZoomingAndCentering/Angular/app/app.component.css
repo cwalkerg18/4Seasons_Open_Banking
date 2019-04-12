@@ -1,0 +1,8 @@
+::ng-deep #vector-map {
+    height: 420px;
+    width: 100%;
+    display: block;
+}
+::ng-deep #reset {
+    margin: 10px 2px;
+}

@@ -1,0 +1,61 @@
+<template>
+  <dx-scheduler
+    :data-source="dataSource"
+    :groups="groups"
+    :current-date="currentDate"
+    :height="700"
+    :start-day-hour="9"
+    :end-day-hour="16"
+    :cross-scrolling-enabled="true"
+    :current-view="currentView"
+  >
+    <dx-view
+      :cell-duration="60"
+      :interval-count="2"
+      type="workWeek"
+      name="Vertical Grouping"
+      group-orientation="vertical"
+    />
+    <dx-view
+      :cell-duration="30"
+      :interval-count="2"
+      type="workWeek"
+      name="Horizontal Grouping"
+    />
+    <dx-resource
+      :allow-multiple="false"
+      :data-source="priorityData"
+      field-expr="priorityId"
+      label="Priority"
+    />
+  </dx-scheduler>
+</template>
+<script>
+
+import { DxScheduler, DxResource, DxView } from 'devextreme-vue/scheduler';
+
+import { data, priorityData } from './data.js';
+
+export default {
+  components: {
+    DxScheduler,
+    DxResource,
+    DxView
+  },
+  data() {
+    return {
+      currentView: 'Vertical Grouping',
+      groups: ['priorityId'],
+      currentDate: new Date(2018, 4, 21),
+      dataSource: data,
+      priorityData: priorityData
+    };
+  }
+};
+</script>
+
+<style scoped>
+.dx-scheduler-cell-sizes-horizontal {
+    width: 100px;
+}
+</style>

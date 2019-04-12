@@ -1,0 +1,11 @@
+::ng-deep #range-selector-demo {
+    height: 480px;
+    width: 100%;
+}
+::ng-deep #zoomed-chart{
+    height: 335px;
+    margin: 0 0 15px;
+}
+::ng-deep #range-selector {
+    height: 80px;
+}

@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SalesDashboard", "http://localhost:60745", "{CED9DCB0-8514-4767-BDB4-3F064B22F4FE}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_60743"
+		Debug.AspNetCompiler.PhysicalPath = "SalesDashboard\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60743\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_60743"
+		Release.AspNetCompiler.PhysicalPath = "SalesDashboard\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60743\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "SalesDashboard\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesViewer", "SalesViewer\SalesViewer.csproj", "{990A73E3-4E71-43FF-97BF-7A3530BEC150}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CED9DCB0-8514-4767-BDB4-3F064B22F4FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CED9DCB0-8514-4767-BDB4-3F064B22F4FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CED9DCB0-8514-4767-BDB4-3F064B22F4FE}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{CED9DCB0-8514-4767-BDB4-3F064B22F4FE}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{990A73E3-4E71-43FF-97BF-7A3530BEC150}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{990A73E3-4E71-43FF-97BF-7A3530BEC150}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{990A73E3-4E71-43FF-97BF-7A3530BEC150}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{990A73E3-4E71-43FF-97BF-7A3530BEC150}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
+

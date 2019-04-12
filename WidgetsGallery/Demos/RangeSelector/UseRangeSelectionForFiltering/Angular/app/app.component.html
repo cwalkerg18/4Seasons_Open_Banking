@@ -1,0 +1,32 @@
+<div id="range-selector-demo">
+    <dx-range-selector 
+        id="range-selector"
+        title="Filter Employee List by Birth Year"
+        [dataSource]="employees"
+        dataSourceField="BirthYear"
+        (onValueChanged)="onValueChanged($event)">
+        <dxo-margin [top]="20"></dxo-margin>
+        <dxo-size [height]="140"></dxo-size>
+        <dxo-scale 
+            [tickInterval]="1"
+            [minorTickInterval]="1">
+            <dxo-label format="decimal"></dxo-label>
+        </dxo-scale>
+        <dxo-behavior callValueChanged="onMoving"></dxo-behavior>
+    </dx-range-selector>
+    <h2>Selected Employees</h2> 
+    <table>
+        <tr>
+            <td *ngFor="let data of tableTitles">
+                <b>{{data}}</b>
+            </td>
+        </tr>
+        <tr *ngFor="let data of selectedEmployees">
+            <td>{{data.FirstName}}</td>
+            <td>{{data.LastName}}</td>
+            <td>{{data.BirthYear}}</td>
+            <td>{{data.City}}</td>
+            <td>{{data.Title}}</td>
+        </tr>
+    </table>
+</div>

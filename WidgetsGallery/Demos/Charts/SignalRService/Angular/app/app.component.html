@@ -1,0 +1,28 @@
+<div ng-if="connectionStarted">
+    <dx-chart
+        id="chart"
+        [dataSource]="dataSource"
+        (onZoomEnd)="zoomEnd($event)"
+        title="Stock Price">
+        <dxi-series
+            argumentField="date"
+            type="candlestick">
+            <dxo-aggregation
+                [enabled]="true"
+                method="custom"
+                [calculate]="calculateCandle">
+            </dxo-aggregation>
+    </dxi-series>
+    <dxo-margin [right]="30"></dxo-margin>
+    <dxo-scroll-bar  [visible]="true"></dxo-scroll-bar>
+    <dxo-legend [visible]="false"></dxo-legend>
+    <dxi-value-axis [placeholderSize]="50"></dxi-value-axis>
+    <dxo-zoom-and-pan argumentAxis="both"></dxo-zoom-and-pan>
+    <dxo-argument-axis
+        argumentType="datetime"
+        [valueMarginsEnabled]="false"
+        [visualRange]="{length: 'hour'}"
+    ></dxo-argument-axis>
+    <dxo-loading-indicator show="true"></dxo-loading-indicator>
+    </dx-chart>
+</div>

@@ -1,0 +1,16 @@
+::ng-deep #gridContainer {
+    height: 440px;
+}
+
+::ng-deep .oldOrder {
+    color: #AAAAAA;
+}
+
+::ng-deep .highAmountOrder_saleAmount {
+    background-color: #FFBB00;
+    color: #000000;
+}
+
+::ng-deep .highAmountOrder_employee {
+    font-weight: bold;
+}

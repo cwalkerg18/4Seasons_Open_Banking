@@ -1,0 +1,28 @@
+#range-selector-demo {
+    height: 540px;
+    width: 100%;
+}
+
+#range-selector-demo h2 {
+    font-size: 20px;
+    margin: 38px 0 10px;
+    text-align: center;
+}
+
+#range-selector-demo table {
+    width: 100%;
+    border: 1px solid #c2c2c2;
+    border-collapse: collapse;
+    border-spacing: 0;     
+}
+
+#range-selector-demo td {
+    width: 20%;
+    padding: 4px;
+    border-top: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
+}
+
+#range-selector-demo td > b {
+    font-weight: 500;
+}

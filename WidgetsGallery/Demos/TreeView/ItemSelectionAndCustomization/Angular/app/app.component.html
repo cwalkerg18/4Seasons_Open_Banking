@@ -1,0 +1,22 @@
+<div class="form">
+    <h4>Store: Super Mart of the West</h4>
+    <dx-tree-view
+        id="selection-treeview"
+        [items]="products"
+        [width]="320"
+        showCheckBoxesMode="normal"
+        (onItemSelectionChanged)="selectionChanged($event)"
+    >
+        <div *dxTemplate="let data of 'item'">
+            {{data | title}}
+        </div>
+    </dx-tree-view>
+    <div class="selected-data">
+        Selected Products
+        <dx-list id="checked-items" [width]="400" [items]="checkedItems">
+            <dxi-item *ngFor="let item of checkedItems">
+                {{item.text + " (" + item.category + ") - $" + item.itemData.price}}
+            </dxi-item>
+        </dx-list>
+    </div>
+</div>

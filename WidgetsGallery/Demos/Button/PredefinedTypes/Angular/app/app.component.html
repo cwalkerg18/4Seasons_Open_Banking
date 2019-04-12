@@ -1,0 +1,21 @@
+<div class="buttons-demo">
+    <div class="header">
+        <div></div>
+        <div>Normal</div>
+        <div>Success</div>
+        <div>Default</div>
+        <div>Danger</div>
+    </div>
+    <div class="types">
+        <div>Contained</div>
+        <div>Outlined</div>
+        <div>Text</div>
+    </div>
+    <div class="buttons">
+        <ng-template ngFor let-mode [ngForOf]="modes">
+            <div *ngFor="let options of baseOptions">
+                <dx-button [stylingMode]="mode" [type]="options.type" [text]="options.text" [width]="90" (onClick)="click($event)"></dx-button>
+            </div>
+        </ng-template>
+    </div>
+</div>

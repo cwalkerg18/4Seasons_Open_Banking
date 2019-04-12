@@ -1,0 +1,22 @@
+<div class="dx-fieldset">
+    <div class="dx-fieldset-header">Simple lookup</div>
+    <div class="dx-field">
+        <dx-lookup
+            [items]="employees"
+            [value]="employees[0]"
+            [showPopupTitle]="false">
+        </dx-lookup>
+    </div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-fieldset-header">Grouped lookup</div>
+    <div class="dx-field">
+        <dx-lookup
+            [dataSource]="dataSource"
+            [grouped]="true"
+            [closeOnOutsideClick]="true"
+            [showPopupTitle]="false"
+            displayExpr="Subject">
+        </dx-lookup>
+    </div>
+</div>

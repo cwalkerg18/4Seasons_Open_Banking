@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Customers";
+}
+
+<div class="page customers">
+    <div class="layout-box">
+        <div class="content">
+            <h3 class="indent">@(ViewBag.Title.ToUpper())</h3>
+            <div class="hb-a">
+                <div id="grid"></div>
+            </div>
+            <div class="hb-4">
+                <div class="lb-1">
+                    <div id="productsMap" class="indent"></div>
+                </div>
+                <div class="lb-2">
+                    <div id="productsChart"></div>
+                </div>
+            </div>
+        </div>
+        <div class="range-content">
+            <div class="hb-2">
+                <div class="left-arrow" id="prevYear"></div>
+                <div id="rangeSelector">
+                </div>
+                <div class="right-arrow disabled" id="nextYear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section descriptionTextForPopup{
+
+    <p>Craft interactive and fully engaging web applications with DevExpress HTML 5 Libraries.</p>
+    <p>Widgets showcased on this page:</p>
+
+    <p><a target="_blank" href="http://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxDataGrid/"><b>Data Grid</b></a> - used to display customer information. The grid’s filter row allows you to locate data by individual columns.</p>
+
+    <p><a target="_blank" href="http://js.devexpress.com/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/"><b>Range Control</b></a> – used to visually specify a date range for sales information displayed within the grid.</p>
+
+    <p><a target="_blank" href="http://js.devexpress.com/Documentation/ApiReference/Data_Visualization_Widgets/dxVectorMap/"><b>Vector Map</b></a> – used to display the geographic distribution of purchases made by the selected customer. Marker hints are activated when hovered.</p>
+
+}

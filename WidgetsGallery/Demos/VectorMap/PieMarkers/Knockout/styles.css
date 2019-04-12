@@ -1,0 +1,10 @@
+#vector-map {
+    height: 440px;
+    width: 100%;
+    display: block;
+}
+
+.country {
+    font-size: 15px;
+    font-weight: 500;
+}

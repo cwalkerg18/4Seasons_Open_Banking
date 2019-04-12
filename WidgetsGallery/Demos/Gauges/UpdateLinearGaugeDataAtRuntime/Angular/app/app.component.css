@@ -1,0 +1,22 @@
+::ng-deep #gauge-demo {
+    height: 480px;
+    width: 100%;
+}
+
+::ng-deep #gauge-demo .gauge-element {
+    height: 400px;
+    width: 30%;
+    display: inline-block;
+}
+
+::ng-deep #gauge-demo .dx-selectbox {
+    margin: 10px auto 0;
+    width: 200px;
+}
+
+::ng-deep .long-title h3 {
+    font-weight: 200;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}

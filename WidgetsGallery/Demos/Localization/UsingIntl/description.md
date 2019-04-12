@@ -1,0 +1,3 @@
+DevExtreme widgets can be&nbsp;localized by&nbsp;means of&nbsp;the [Intl][0] object. You need to&nbsp;link the devextreme-intl module, and DevExtreme dictionaries for desired locales (see the <head\> tag of&nbsp;index.html). Using Angular, Vue and React, get all the needed components as&nbsp;imported modules instead (see app.component.ts, App.vue and App.js correspondingly). Then, set the current locale with the **DevExpress.localization.locale** method.
+
+[0]: https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Intl

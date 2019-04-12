@@ -1,0 +1,75 @@
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>@ViewBag.Title / Sale Viewer By DevExpress</title>
+ 
+    @Styles.Render(SalesViewer.App_Start.BundleConfig.SiteCssBundle)
+    @Styles.Render(SalesViewer.App_Start.BundleConfig.SiteLessBundle)
+    @Scripts.Render(SalesViewer.App_Start.BundleConfig.SiteJsBundle)
+
+    <script>
+        $(function () {
+            SaleViewer.criteria = "@(ViewBag.criteria)";
+            SaleViewer.baseApiUrl = "@VirtualPathUtility.ToAbsolute("~/api/")";
+        });
+    </script>
+    @Scripts.Render(SalesViewer.App_Start.BundleConfig.viewsBundles[ViewBag.Title.ToLower()])
+
+</head>
+<body id="salesviewer">
+    <div class="page-content-wrapper">
+        <div class="page-content-push"></div>
+        <div id="header">
+            <div class="content">
+                <a class="logo indent" href="~/"></a>
+                
+                <div class="menu">
+                    <div id="menu"></div>
+                    
+                    <div id="openPopupButton">
+                        <a><span class="info-link">?</span></a>
+                    </div>
+                   
+                </div>
+                <script>
+                    var activePageId = "@ViewBag.PageId" || "@ViewBag.Title",
+                    topMenu = new SaleViewer.TopMenu($("#menu"), activePageId, "@ViewBag.Header");
+                    topMenu.init();
+                </script>
+                </div>
+
+        </div>
+
+        @RenderBody()
+
+    </div>
+    <div id="footer">
+        <div class="wrapper">
+            <div class="content">
+                <div class="text indent">
+                    <h2>Your Next Great Web App Starts Here</h2>
+                    <p>Download your free <a target="_blank" href="https://js.devexpress.com/Download/">30 day trial</a> of DevExtreme today</p>
+                </div>
+                <a class="dx-logo" href="https://www.devexpress.com/"></a>
+            </div>
+        </div>
+    </div>
+    <div id="popup">
+        <div class="popup-content">
+            <div class="popup-title"></div>
+            <div class="popup-text">
+                @RenderSection("descriptionTextForPopup")
+            </div>
+        </div>
+        <div class="dx-clearfix">
+            <div id="closePopupButton">OK</div>
+            <div id="downloadPopupButton">Download Free Trial</div>
+        </div>
+    </div>
+
+</body>
+</html>

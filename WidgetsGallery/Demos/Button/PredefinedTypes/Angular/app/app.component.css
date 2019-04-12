@@ -1,0 +1,52 @@
+:host {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+::ng-deep .demo-container {
+    height: 450px;
+}
+
+::ng-deep .buttons-demo {
+    width: 600px;
+    align-self: center;
+}
+
+::ng-deep .header {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+::ng-deep .header > div {
+    flex-grow: 0;
+    flex-basis: 120px;
+    height: 30px;
+}
+
+::ng-deep .types {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+::ng-deep .types > div {
+    flex-grow: 1;
+    padding: 10px;
+    height: 30px;
+    line-height: 20px;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+::ng-deep .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 120px;
+}
+
+::ng-deep .buttons > div {
+    flex-basis: 120px;
+    height: 50px;
+}

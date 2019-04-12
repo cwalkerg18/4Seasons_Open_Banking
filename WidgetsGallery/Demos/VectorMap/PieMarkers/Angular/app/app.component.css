@@ -1,0 +1,10 @@
+::ng-deep #vector-map {
+    height: 440px;
+    width: 100%;
+    display: block;
+}
+
+::ng-deep .country {
+    font-size: 15px;
+    font-weight: 500;
+}

@@ -1,0 +1,32 @@
+<div class="dx-fieldset">
+    <div class="dx-fieldset-header">SearchBox mode</div>
+    <div class="dx-field">
+        <div class="dx-field-label">Product</div>
+        <div class="dx-field-value">
+            <dx-select-box
+                [items]="products"
+                displayExpr="Name"
+                valueExpr="ID"
+                [searchEnabled]="true"
+            ></dx-select-box>
+        </div>
+    </div>
+</div>
+<div class="dx-fieldset">
+    <div class="dx-fieldset-header">EditBox mode</div>
+    <div class="dx-field">
+        <div class="dx-field-label">Product</div>
+        <div class="dx-field-value">
+            <dx-select-box
+                #selectBox
+                [items]="simpleProducts"
+                [acceptCustomValue]="true"
+                [value]="simpleProducts[0]"
+                (onCustomItemCreating)="addCustomItem($event)"
+            ></dx-select-box>
+        </div>
+    </div>
+    <div class="dx-field current-product">
+        Current product is <span class="current-value">{{selectBox.value}}</span>
+    </div>
+</div>

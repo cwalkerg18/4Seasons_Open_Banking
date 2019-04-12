@@ -1,0 +1,32 @@
+<dx-scheduler
+    [dataSource]="dataSource"
+    [timeZone]="currentLocation"
+    [views]="['workWeek']"
+    currentView="workWeek"
+    [startDayHour]="8"
+    [currentDate]="currentDate"
+    [resources]="resources"
+    [height]="600"
+    (onAppointmentFormOpening)="onAppointmentFormOpening($event)">
+
+    <dxi-resource
+        fieldExpr="startDateTimeZone"
+        valueExpr="value"
+        [dataSource]="locations">
+    </dxi-resource>
+</dx-scheduler>
+
+<div class="options">
+    <div class="caption">Options</div>
+    <div class="option">
+        <span>Office Location</span>
+        <dx-select-box
+            [items]="locations"
+            [width]="200"
+            displayExpr="text"
+            valueExpr="value"
+            [(value)]="currentLocation"
+            (onValueChanged)="onValueChanged($event)">
+        </dx-select-box>
+    </div>
+</div>    

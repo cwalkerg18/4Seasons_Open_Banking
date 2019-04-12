@@ -1,0 +1,67 @@
+::ng-deep .appointment-content {
+    width: 360px;
+    margin-top: 3px;
+}
+
+::ng-deep .dx-popup-content .appointment-content {
+    margin-top: 7px;
+    height: 50px;
+}
+
+::ng-deep .appointment-badge {
+    text-align: center;
+    float: left;
+    margin-right: 12px;
+    color: white;
+    width: 28px;
+    height: 28px;
+    font-size: 20px;
+    line-height: 20px;
+    border-radius: 28px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+::ng-deep .appointment-dates {
+    color: #959595;
+    font-size: 12px;
+    text-align: left;
+    float: left;
+}
+
+::ng-deep .appointment-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 270px;
+    font-size: 15px;
+    text-align: left;
+    float: left;
+}
+
+::ng-deep .delete-appointment {
+    position: relative;
+    border: none;
+    box-shadow: none;
+    top: -8px;
+    height: 50px;
+}
+
+::ng-deep .delete-appointment .dx-button-content {
+    width: 50px;
+    height: 50px;
+    padding-left: 4px;
+}
+
+::ng-deep .delete-appointment.dx-state-hover,
+::ng-deep .dx-list-item.dx-state-hover .dx-button {
+    box-shadow: none;
+    background-color: inherit;
+}
+
+::ng-deep .delete-appointment .dx-icon-trash {
+    color: #337ab7 !important;
+    font-size: 23px !important;
+}

@@ -1,0 +1,134 @@
+<div class="long-title"><h3>Monthly Prices of Aluminium, Nickel and Copper</h3></div>
+<div id="chart-demo">
+    <table class="demo-table">
+        <tr>
+            <th></th>
+            <th>Aluminium (USD/ton)</th>
+            <th>Nickel (USD/ton)</th>
+            <th>Copper (USD/ton)</th>
+        </tr>
+        <tr>
+            <th>2010</th>
+            <td>
+                <dx-sparkline class="sparkline"
+                    [dataSource]="aluminumCosts"
+                    argumentField="month"
+                    valueField="2010"
+                    type="winloss"
+                    [showMinMax]="true"
+                    [winlossThreshold]="2100">
+                    <dxo-tooltip format="currency"></dxo-tooltip>
+                </dx-sparkline>
+            </td>
+            <td>
+                <dx-sparkline class="sparkline"
+                    [dataSource]="nickelCosts"
+                    argumentField="month"
+                    valueField="2010"
+                    type="winloss"
+                    [showMinMax]="true"
+                    [showFirstLast]="false"
+                    winColor="#6babac"
+                    lossColor="#8076bb"
+                    [winlossThreshold]="19000">
+                    <dxo-tooltip format="currency"></dxo-tooltip>
+                </dx-sparkline>
+            </td>
+            <td>
+                <dx-sparkline class="sparkline"
+                    [dataSource]="cooperCosts"
+                    argumentField="month"
+                    valueField="2010"
+                    type="winloss"
+                    winColor="#7e4452"
+                    lossColor="#ebdd8f"
+                    firstLastColor="#e55253"
+                    [winlossThreshold]="8000">
+                    <dxo-tooltip format="currency"></dxo-tooltip>
+                </dx-sparkline>
+            </td>
+        </tr>
+        <tr>
+            <th>2011</th>
+            <td>
+                <dx-sparkline class="sparkline"
+                    [dataSource]="aluminumCosts"
+                    argumentField="month"
+                    valueField="2011"
+                    type="winloss"
+                    [showMinMax]="true"
+                    [winlossThreshold]="2100">
+                    <dxo-tooltip format="currency"></dxo-tooltip>
+                </dx-sparkline>
+            </td>
+            <td>
+                <dx-sparkline class="sparkline"
+                    [dataSource]="nickelCosts"
+                    argumentField="month"
+                    valueField="2011"
+                    type="winloss"
+                    [showMinMax]="true"
+                    [showFirstLast]="false"
+                    winColor="#6babac"
+                    lossColor="#8076bb"
+                    [winlossThreshold]="19000">
+                    <dxo-tooltip format="currency"></dxo-tooltip>
+                </dx-sparkline>
+            </td>
+            <td>
+                <dx-sparkline class="sparkline"
+                    [dataSource]="cooperCosts"
+                    argumentField="month"
+                    valueField="2011"
+                    type="winloss"
+                    winColor="#7e4452"
+                    lossColor="#ebdd8f"
+                    firstLastColor="#e55253"
+                    [winlossThreshold]="8000">
+                    <dxo-tooltip format="currency"></dxo-tooltip>
+                </dx-sparkline>
+            </td>
+        </tr>
+            <tr>
+            <th>2012</th>
+            <td>
+                <dx-sparkline class="sparkline"
+                    [dataSource]="aluminumCosts"
+                    argumentField="month"
+                    valueField="2012"
+                    type="winloss"
+                    [showMinMax]="true"
+                    [winlossThreshold]="2100">
+                    <dxo-tooltip format="currency"></dxo-tooltip>
+                </dx-sparkline>
+            </td>
+            <td>
+                <dx-sparkline class="sparkline"
+                    [dataSource]="nickelCosts"
+                    argumentField="month"
+                    valueField="2012"
+                    type="winloss"
+                    [showMinMax]="true"
+                    [showFirstLast]="false"
+                    winColor="#6babac"
+                    lossColor="#8076bb"
+                    [winlossThreshold]="19000">
+                    <dxo-tooltip format="currency"></dxo-tooltip>
+                </dx-sparkline>
+            </td>
+            <td>
+                <dx-sparkline class="sparkline"
+                    [dataSource]="cooperCosts"
+                    argumentField="month"
+                    valueField="2012"
+                    type="winloss"
+                    winColor="#7e4452"
+                    lossColor="#ebdd8f"
+                    firstLastColor="#e55253"
+                    [winlossThreshold]="8000">
+                    <dxo-tooltip format="currency"></dxo-tooltip>
+                </dx-sparkline>
+            </td>
+        </tr>
+    </table>
+</div>

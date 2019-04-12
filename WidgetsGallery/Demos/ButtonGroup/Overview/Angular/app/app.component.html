@@ -1,0 +1,24 @@
+<div class="dx-fieldset">
+    <div class="dx-field">
+        <div class="dx-field-value">
+            <dx-button-group [items]="alignments" keyExpr="alignment" stylingMode="outlined"></dx-button-group>
+        </div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-value">
+            <dx-button-group [items]="fontStyles" keyExpr="style" stylingMode="outlined" selectionMode="multiple"></dx-button-group>
+        </div>
+    </div>
+</div>
+<div class="dx-fieldset dx-buttongroup-mode-text">
+    <div class="dx-field dx-theme-border-color dx-demo-separator">
+        <div class="dx-field-value">
+            <dx-button-group [items]="alignments" keyExpr="alignment" stylingMode="text"></dx-button-group>
+        </div>
+    </div>
+    <div class="dx-field">
+        <div class="dx-field-value">
+            <dx-button-group [items]="fontStyles" keyExpr="style" stylingMode="text" selectionMode="multiple"></dx-button-group>
+        </div>
+    </div>
+</div>

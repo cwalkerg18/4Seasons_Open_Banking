@@ -1,0 +1,27 @@
+#popup {
+    padding: 10px;
+}
+
+#popup ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+#popup ul li {
+    display: inline-block;
+    width: 160px;
+    margin: 10px;
+}
+
+#popup ul li img{
+    width: 100px;
+}
+
+.button-info {
+    margin: 10px;
+}
+
+.popup p {
+    margin-bottom: 10px;
+    margin-top: 0;
+}

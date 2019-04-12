@@ -1,0 +1,16 @@
+<dx-pie-chart
+    id="pie-chart"
+    [dataSource]="populationData"
+    palette="bright"
+    title="Top 10 Most Populated States in US">
+    <dxi-series
+        argumentField="name"
+        valueField="population"
+        tagField="data">
+    </dxi-series>
+    <dxo-tooltip
+        [enabled]="true"
+        [customizeTooltip]="customizeTooltip">
+    </dxo-tooltip>
+    <dxo-export [enabled]="true"></dxo-export>
+</dx-pie-chart>

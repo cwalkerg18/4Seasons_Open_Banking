@@ -1,0 +1,5 @@
+::ng-deep #map-container {
+    height: 550px;
+    width: 100%;
+    display: block;
+}

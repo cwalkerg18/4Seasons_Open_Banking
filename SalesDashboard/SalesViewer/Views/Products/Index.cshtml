@@ -1,0 +1,92 @@
+﻿@{
+    ViewBag.Title = "Products";
+}
+
+<link rel="stylesheet" href="~/css/products.css" />
+
+<div class="white">
+    <div class="content">
+        <div class="page">
+            <div class="layout-box">
+                <h3 class="indent">@(ViewBag.Title.ToUpper())</h3>
+                <div class="hb-3">
+                    <div id="grid" class="products"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="products-bottom page">
+        <div class="hb-4">
+            <div class="lb-3 indent">
+                <h5>Manufacturing Plant</h5>
+                <div class="plant-description" id="plant">
+                    Harrisburg<br />
+                    188 Market Street<br />
+                    Harrisburg, VA 00098<br />
+                </div>
+                <h5>Project Manager</h5>
+                <div class="plant-description" id="pManager">
+                    John Smith<br />
+                    188 Market Street<br />
+                    Harrisburg, VA 00098<br />
+                    (212) 555-2321
+                    jsmith@harrisburg.com
+                </div>
+            </div>
+
+            <div class="products-pie-container">
+                <div class="lb-4 products-pie">
+                    <div class="doughnut-content dashboard-bottom performance-title dashboard-bottom-products">
+                        <div class="performance-text">REVENUES<br />BY SECTOR</div>
+                    </div>
+                    <div id="pie-sectors"></div>
+                </div>
+                <div class="lb-4 products-pie">
+                    <div class="doughnut-content dashboard-bottom performance-title dashboard-bottom-products">
+                        <div class="performance-text">REVENUES<br />BY REGION</div>
+                    </div>
+                    <div id="pie-regions"></div>
+                </div>
+                <div class="lb-4 products-pie">
+                    <div class="doughnut-content dashboard-bottom performance-title dashboard-bottom-products">
+                        <div class="performance-text">REVENUES<br />BY CHANNEL</div>
+                    </div>
+                    <div id="pie-channels"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hb-2">
+            <div class="lb-3">
+                <div class="indent">
+                    <h5 class="manager">Support Manager</h5>
+                    <div class="plant-description" id="sManager">
+                        Jeff Hall<br />
+                        jeffh@harrisburg.com
+                    </div>
+                </div>
+            </div>
+            <div class="lb-5">
+                <div class="left-arrow" id="prevYear"></div>
+                <div id="rangeSelector">
+                </div>
+                <div class="right-arrow disabled" id="nextYear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section descriptionTextForPopup{
+    
+    <p>Everything you’ll need to create stunning user interfaces for your next web or mobile project.</p>
+
+    <p>Widgets showcased on this page:</p>
+
+    <p><a target="_blank" href="http://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxDataGrid/"><b>Grid</b></a> - used to display products stored in the database. Sort values by clicking individual column headers.</p>
+
+    <p><a target="_blank" href="http://js.devexpress.com/Documentation/ApiReference/Data_Visualization_Widgets/dxPieChart/"><b>Pie Chart</b></a> – used to communicate the state of revenues by sector, region and sales channel.</p>
+
+    <p><a target="_blank" href="http://js.devexpress.com/Documentation/ApiReference/Data_Visualization_Widgets/dxRangeSelector/"><b>Range Control</b></a> – used to visually specify date range parameters. A line chart within the widget illustrates sales patterns over time.</p>
+}

@@ -1,0 +1,2 @@
+﻿This demo uses the data service that is implemented in the SalesViewer project of the current solution. This data service is developed on the ASP.NET WebApi platform. So, to run the demo locally, check that ASP.NET MVC 4 is installed on your machine.
+Alternatively, you can use a remote data service. For this purpose, open the SalesDashboard\scripts\tools.js file and change the baseApiUrl value from "http://localhost:50053/api/" to "http://demos.devexpress.com/DevExtreme/SalesViewer/api/".

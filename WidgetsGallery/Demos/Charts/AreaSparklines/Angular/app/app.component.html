@@ -1,0 +1,137 @@
+<div class="long-title"><h3>Monthly Prices of Copper, Nickel and Palladium</h3></div>
+<div id="chart-demo">
+    <table class="demo-table" border="1">
+        <tr>
+            <th></th>
+            <th>Copper (USD/ton)</th>
+            <th>Nickel (USD/ton)</th>
+            <th>Palladium (USD/troy ounce)</th>
+        </tr>
+        <tr>
+            <th>2010</th>
+            <td>
+                <dx-sparkline class="sparkline"
+                    [dataSource]="copperCosts"
+                    argumentField="month"
+                    valueField="2010"
+                    type="area"
+                    [showMinMax]="true">
+                    <dxo-tooltip format="currency"></dxo-tooltip>
+                </dx-sparkline>
+            </td>
+            <td>
+                <dx-sparkline class="sparkline"
+                    [dataSource]="nickelCosts"
+                    argumentField="month"
+                    valueField="2010"
+                    type="splinearea"
+                    lineColor="#8076bb"
+                    minColor="#6babac"
+                    maxColor="#8076bb"
+                    [pointSize]="6"
+                    [showMinMax]="true"
+                    [showFirstLast]="false">
+                    <dxo-tooltip format="currency"></dxo-tooltip>
+                </dx-sparkline>
+            </td>
+            <td>
+                <dx-sparkline class="sparkline"
+                    [dataSource]="palladiumCosts"
+                    argumentField="month"
+                    valueField="2010"
+                    type="steparea"
+                    lineColor="#7e4452"
+                    [lineWidth]="3"
+                    firstLastColor="#e55253"
+                    pointColor="#e8c267"
+                    pointSymbol="polygon">
+                    <dxo-tooltip format="currency"></dxo-tooltip>
+                </dx-sparkline>
+            </td>
+        </tr>
+        <tr>
+            <th>2011</th>
+            <td>
+                <dx-sparkline class="sparkline"
+                    [dataSource]="copperCosts"
+                    argumentField="month"
+                    valueField="2011"
+                    type="area"
+                    [showMinMax]="true">
+                    <dxo-tooltip format="currency"></dxo-tooltip>
+                </dx-sparkline>
+            </td>
+            <td>
+                <dx-sparkline class="sparkline"
+                    [dataSource]="nickelCosts"
+                    argumentField="month"
+                    valueField="2011"
+                    type="splinearea"
+                    lineColor="#8076bb"
+                    minColor="#6babac"
+                    maxColor="#8076bb"
+                    [pointSize]="6"
+                    [showMinMax]="true"
+                    [showFirstLast]="false">
+                    <dxo-tooltip format="currency"></dxo-tooltip>
+                </dx-sparkline>
+            </td>
+            <td>
+                <dx-sparkline class="sparkline"
+                    [dataSource]="palladiumCosts"
+                    argumentField="month"
+                    valueField="2011"
+                    type="steparea"
+                    lineColor="#7e4452"
+                    [lineWidth]="3"
+                    firstLastColor="#e55253"
+                    pointColor="#e8c267"
+                    pointSymbol="polygon">
+                    <dxo-tooltip format="currency"></dxo-tooltip>
+                </dx-sparkline>
+            </td>
+        </tr>
+        <tr>
+            <th>2012</th>
+            <td>
+                <dx-sparkline class="sparkline"
+                    [dataSource]="copperCosts"
+                    argumentField="month"
+                    valueField="2012"
+                    type="area"
+                    [showMinMax]="true">
+                    <dxo-tooltip format="currency"></dxo-tooltip>
+                </dx-sparkline>
+            </td>
+            <td>
+                <dx-sparkline class="sparkline"
+                    [dataSource]="nickelCosts"
+                    argumentField="month"
+                    valueField="2012"
+                    type="splinearea"
+                    lineColor="#8076bb"
+                    minColor="#6babac"
+                    maxColor="#8076bb"
+                    [pointSize]="6"
+                    [showMinMax]="true"
+                    [showFirstLast]="false">
+                    <dxo-tooltip format="currency"></dxo-tooltip>
+                </dx-sparkline>
+            </td>
+            <td>
+                <dx-sparkline class="sparkline"
+                    [dataSource]="palladiumCosts"
+                    argumentField="month"
+                    valueField="2012"
+                    type="steparea"
+                    lineColor="#7e4452"
+                    [lineWidth]="3"
+                    firstLastColor="#e55253"
+                    pointColor="#e8c267"
+                    pointSymbol="polygon">
+                    <dxo-tooltip format="currency"></dxo-tooltip>
+                </dx-sparkline>
+            </td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,9 @@
+<dx-data-grid id="gridContainer" [dataSource]="orders" [showBorders]="true" (onCellPrepared)="onCellPrepared($event)">
+    <dxi-column dataField="OrderNumber" caption="Invoice Number" [width]="130"></dxi-column>
+    <dxi-column dataField="OrderDate" [width]="160" dataType="date"></dxi-column>
+    <dxi-column dataField="Employee"></dxi-column>
+    <dxi-column dataField="CustomerStoreCity" caption="City"></dxi-column>
+    <dxi-column dataField="CustomerStoreState" caption="State"></dxi-column>
+    <dxi-column dataField="SaleAmount" alignment="right" format="currency"></dxi-column>
+    <dxo-export [enabled]="true" [customizeExcelCell]="customizeExcelCell"></dxo-export>
+</dx-data-grid>

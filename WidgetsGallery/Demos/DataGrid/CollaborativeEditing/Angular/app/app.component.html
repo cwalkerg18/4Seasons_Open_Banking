@@ -1,0 +1,48 @@
+<div id="data-grid-demo">
+    <dx-data-grid
+        id="gridContainer"
+        [dataSource]="dataSource"
+        [showBorders]="true"
+        [repaintChangesOnly]="true"
+        (onSelectionChanged)="selectionChanged($event)">
+
+        <dxo-paging [enabled]="false"></dxo-paging>
+        <dxo-editing
+            refreshMode="repaint"
+            mode="cell"
+            [allowUpdating]="true"
+            [allowDeleting]="true"
+            [allowAdding]="true">
+        </dxo-editing>
+        <dxi-column dataField="Prefix" caption="Title" [width]="55"></dxi-column>
+        <dxi-column dataField="FirstName"></dxi-column>
+        <dxi-column dataField="LastName"></dxi-column>
+        <dxi-column dataField="Position" [width]="170"></dxi-column>
+        <dxi-column
+            dataField="StateID"
+            caption="State"
+            [width]="125">
+            <dxo-lookup
+                [dataSource]="stateDataSource"
+                displayExpr="Name"
+                valueExpr="ID">
+            </dxo-lookup>
+        </dxi-column>
+        <dxi-column
+            dataField="BirthDate"
+            dataType="date">
+        </dxi-column>
+    </dx-data-grid>
+    <div class="options">
+        <div class="caption">Options</div>
+        <div class="option">
+            <span>Session ID:</span>
+            <dx-text-box
+                id="sessionId"
+                [value]="sessionId"
+                (onValueChanged)="textBoxValueChanged($event)">
+            </dx-text-box>
+        </div>
+    </div>
+</div>
+

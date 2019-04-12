@@ -1,0 +1,6 @@
+::ng-deep .current-product {
+    padding-top: 11px;
+}
+::ng-deep .current-value {
+    font-weight: bold;
+}

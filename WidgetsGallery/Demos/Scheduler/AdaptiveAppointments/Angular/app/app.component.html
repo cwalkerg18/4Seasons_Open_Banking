@@ -1,0 +1,42 @@
+<dx-scheduler
+    [dataSource]="appointmentsData"
+    [views]="views"
+    currentView="Auto Mode"
+    [currentDate]="currentDate"
+    dropDownAppointmentTemplate="appointment-template"
+    appointmentTooltipTemplate="appointment-template"
+    (onAppointmentDeleted)="onAppointmentDeleted()"
+    [height]="650">
+    <dxi-view
+        name="Auto Mode"
+        type="month"
+        maxAppointmentsPerCell="auto">
+    </dxi-view>
+    <dxi-view 
+        name="Unlimited Mode"
+        type="month"
+        maxAppointmentsPerCell="unlimited">
+    </dxi-view>
+    <dxi-view 
+        name="Numeric Mode"
+        type="month"
+        [maxAppointmentsPerCell]="2">
+    </dxi-view>
+    <dxi-resource
+        fieldExpr="roomId"
+        label="room"
+        [dataSource]="resourcesData"
+    ></dxi-resource>
+
+    <div *dxTemplate="let appointment of 'appointment-template'">
+        <div class="appointment-content">
+            <div class="appointment-badge" [ngStyle]="{ backgroundColor: getAppointmentColor(appointment.roomId) }">{{appointment.text[0]}}</div>
+            <div class="appointment-text">{{appointment.text}}</div>
+            <div class="appointment-dates">
+                {{(appointment.startDate | date : 'MMM d') + ' , ' + (appointment.startDate | date:'shortTime') + ' - ' + (appointment.endDate | date:'shortTime')}}
+            </div>
+            <dx-button class = "delete-appointment" icon="trash" (onClick)="deleteAppointment(appointment)">
+            </dx-button>
+        </div>
+    </div>
+</dx-scheduler>

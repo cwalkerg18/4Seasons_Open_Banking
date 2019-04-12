@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>DevExtreme Demo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script src="../../../../js/jquery.min.js"></script>
+    <script src="../../../../js/cldr.min.js"></script>
+    <script src="../../../../js/cldr/event.min.js"></script>
+    <script src="../../../../js/cldr/supplemental.min.js"></script>
+    <script src="../../../../js/cldr/unresolved.min.js"></script>
+    <script type="text/javascript" src="../../../../js/globalize.min.js"></script>
+    <script type="text/javascript" src="../../../../js/globalize/message.min.js"></script>
+    <script type="text/javascript" src="../../../../js/globalize/number.min.js"></script>
+    <script type="text/javascript" src="../../../../js/globalize/currency.min.js"></script>
+    <script type="text/javascript" src="../../../../js/globalize/date.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../../../css/dx.common.css" />
+    <link rel="dx-theme" data-theme="generic.light" href="../../../../css/dx.light.css" />
+    <script src="../../../../js/angular.min.js"></script>
+    <script src="../../../../js/dx.all.js"></script>
+    <link rel="stylesheet" type ="text/css" href ="styles.css" />
+    <script src="index.js"></script>
+</head>
+<body class="dx-viewport">
+    <div class="demo-container" ng-app="DemoApp" ng-controller="DemoController">
+        <div id="gridContainer" dx-data-grid="dataGridOptions" dx-item-alias="discount"> 
+           <div data-options="dxTemplate:{ name:'discountCellTemplate' }">
+                <div class="chart-cell">
+                    <div dx-bullet="{
+                        onIncidentOccurred: null,
+                        size: {
+                            width: 150,
+                            height: 35
+                        },
+                        margin: {
+                            top: 5,
+                            bottom: 0,
+                            left: 5
+                        },
+                        showTarget: false,
+                        showZeroLevel: true,
+                        value: discount.value * 100,
+                        startScaleValue: 0,
+                        endScaleValue: 100,
+                        tooltip: {
+                            enabled: true,
+                            font: {
+                                size: 18
+                            },
+                            paddingTopBottom: 2,
+                            customizeTooltip: customizeTooltip,
+                            zIndex: 5
+                        }
+                    }"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
